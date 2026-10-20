@@ -53,12 +53,6 @@ The reference FCM contains supply-chain and manufacturing capability concepts C1
 
 All weights are evidence-informed researcher judgements rather than industry-elicited estimates. The reference sigmoid steepness was **not calibrated** against observed production data. The thesis provides the fuller methodology, assumptions, causal evidence and sensitivity analysis. In particular, refer to **Chapter 6 and Table 14** for model relationships and their research justification, and **Chapter 10** for robustness and limitations.
 
-## Important documentation check before public release
-
-The `EDGES` entries in `FCM_CFRP_Supply_Chain.py` still contain **`Source: TO ADD`** placeholders from the code-development stage. These are **documentation placeholders only**, not variables used in the calculations, but they should be replaced with the corresponding verified source references from the thesis's final Table 14 before describing this repository as fully documented. Some `PROVISIONAL` strings must **not be deleted without updating the analysis**: `FCM_Weight_Sensitivity.py` reads their previous numeric weights to reconstruct the 32 ambiguity-test cases. Any future revisions should preserve that test configuration explicitly.
-
-The text and chart filenames reflect development history; some generated Chapter 10 plots retain `fig9_` prefixes. Their naming does not affect numerical results.
-
 ## Research transparency
 
 The code was developed with generative AI assistance, as described in the thesis's AI-use declaration. The author is responsible for reviewing the model design, assumptions and published interpretation. Verify any reuse against the current version of the associated thesis. No licence is granted by the presence of a public repository alone; contact the author regarding reuse beyond rights afforded by law.
